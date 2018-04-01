@@ -6,7 +6,7 @@
  * @notions Functions, Operators
  */
 
-// Your code :
+const concatStr = (arg1, arg2) => arg1+arg2
 
 //* Begin of tests
 const assert = require('assert')

@@ -12,9 +12,17 @@
  *
  */
 
+ const keepFirst = str => str.slice(0, 2)
+ const keepLast = str => str.slice(str.length - 2)
+ const keepFirstLast = str => str.slice(2, 4)
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.deepStrictEqual(keepFirst("justine"), "ju")
+assert.strictEqual(typeof keepLast, 'function')
+assert.deepStrictEqual(keepLast("justine"), "ne")
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.deepStrictEqual(keepFirstLast("justine"), "st")
 // End of tests */

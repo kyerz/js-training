@@ -6,7 +6,8 @@
  *
  */
 
-// Your code:
+const isPositive = nb => nb > 0 ? true : false
+
 
 
 //* Begin of tests

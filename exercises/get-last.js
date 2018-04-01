@@ -7,7 +7,7 @@
  * @notions Data-Structures, Get
  */
 
-// Your code :
+const getLast = tab => tab[tab.length-1]
 
 //* Begin of tests
 const assert = require('assert')

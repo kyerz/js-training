@@ -6,7 +6,13 @@
  *
  */
 
-
+const total = arr => {
+  let nbTotal = 0
+  arr.forEach(item => {
+    nbTotal += item
+  })
+  return nbTotal
+}
 //* Begin of tests
 const assert = require('assert')
 

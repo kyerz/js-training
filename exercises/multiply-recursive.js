@@ -9,7 +9,28 @@
  * @notions Primitive and Operators, Functions, Recursion
  */
 
-// Your code :
+// Your code :     -4   5     4  -5             4   -5       -5   -5     0   5
+
+let total = 0
+
+const multiply = (nb1, nb2) => {
+
+  if( nb1 < 0) {
+    nb1 = -nb1
+    nb2 = -nb2
+    return multiply(nb1, nb2)
+  }
+  else if(nb1 > 0) {
+    total += nb2
+    nb1--
+    return multiply(nb1, nb2)
+  }
+  else {
+    const result = total
+    total = 0
+    return result
+  }
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -28,4 +49,4 @@ assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
-// End of tests */
+//End of tests */

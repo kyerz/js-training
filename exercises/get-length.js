@@ -7,7 +7,7 @@
  * @notions Data-Structures, Get
  */
 
-// Your code :
+const getLength = tab => tab.length
 
 //* Begin of tests
 const assert = require('assert')

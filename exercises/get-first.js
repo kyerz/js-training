@@ -7,7 +7,7 @@
  * @notions Data-Structures, Get
  */
 
-// Your code :
+const getFirst = tab => tab[0]
 
 //* Begin of tests
 const assert = require('assert')

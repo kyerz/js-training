@@ -9,7 +9,7 @@
  * @notions Functions, Ternary
  */
 
-// Your code :
+const abs = arg => arg >= 0 ? arg : -arg
 
 //* Begin of tests
 const assert = require('assert')

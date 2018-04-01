@@ -9,7 +9,7 @@
  * @notions Functions, Ternary
  */
 
-// Your code :
+const max = (arg1, arg2) => arg1 > arg2 ? arg1 : arg2 
 
 //* Begin of tests
 const assert = require('assert')
